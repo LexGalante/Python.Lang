@@ -93,3 +93,27 @@ num1, num2, bool3 = lista  # precisa ser exatamente igual
 print(num1)
 print(num2)
 print(bool3)
+
+# comprehension
+numeros = range(0, 11)
+multiplicacao = [numero * 10 for numero in numeros]
+divisao = [numero / 1 for numero in numeros]
+pares = [numero for numero in numeros if numero % 2 == 0]
+impares = [numero for numero in numeros if numero % 2 != 0]
+processamento = [numero * 2 if numero %
+                 2 == 0 else numero * 2 for numero in numeros]
+
+print(numeros)
+print(multiplicacao)
+print(divisao)
+print(pares)
+print(impares)
+print(processamento)
+print([palavra.upper() for palavra in 'alex volnei galante'.split(' ')])
+
+matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(matriz[0])
+print(matriz[2][1])
+print([[print(valor) for valor in lista] for lista in matriz])
+tabuleiro = [[numero for numero in range(1, 4)] for valor in range(1, 4)]
+print(tabuleiro)
