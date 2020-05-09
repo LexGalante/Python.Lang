@@ -131,3 +131,4 @@ dmypy.json
 # Vs Code .history
 .history
 .idea
+.vscode
