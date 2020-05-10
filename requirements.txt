@@ -1,1 +1,4 @@
 passlib
+colorama
+pandas
+textblob
